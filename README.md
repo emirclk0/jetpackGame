@@ -1,3 +1,3 @@
 # jetpackGame
 
-C# Windows Form Application kullanılarak yaptığım basit bir uzay oyunu.
+C# Windows Form Application kullanarak yaptığım basit bir uzay oyunu.
