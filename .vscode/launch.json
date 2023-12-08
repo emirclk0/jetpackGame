@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "vslsRemoteLaunch",
+            "name": "jetpackGame",
+            "request": "attach",
+            "projectID": "54f8c962-5e60-4e6c-86f9-9843a6146b63"
+        }
+    ]
+}
