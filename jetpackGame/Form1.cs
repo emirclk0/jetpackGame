@@ -78,6 +78,7 @@ namespace jetpackGame
             scoreTimer.Stop();
             dieTimer.Start();
             endLabel.Visible = true;
+            button1.Visible = true;
         }
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
@@ -425,6 +426,11 @@ namespace jetpackGame
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }

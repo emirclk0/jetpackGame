@@ -43,6 +43,7 @@
             drawStarTimer = new System.Windows.Forms.Timer(components);
             label3 = new Label();
             dieTimer = new System.Windows.Forms.Timer(components);
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -153,11 +154,27 @@
             dieTimer.Interval = 200;
             dieTimer.Tick += dieTimer_Tick;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.Font = new Font("Showcard Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.Yellow;
+            button1.Location = new Point(534, 548);
+            button1.Name = "button1";
+            button1.Size = new Size(180, 122);
+            button1.TabIndex = 6;
+            button1.Text = "YENIDEN OYNA";
+            button1.UseVisualStyleBackColor = false;
+            button1.Visible = false;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1282, 853);
+            Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(fuelbar);
             Controls.Add(endLabel);
@@ -194,5 +211,6 @@
         private System.Windows.Forms.Timer drawStarTimer;
         private Label label3;
         private System.Windows.Forms.Timer dieTimer;
+        private Button button1;
     }
 }
